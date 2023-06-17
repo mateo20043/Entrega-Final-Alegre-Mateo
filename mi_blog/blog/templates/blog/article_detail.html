@@ -1,0 +1,5 @@
+<h2>{{ article.title }}</h2>
+<p>{{ article.content }}</p>
+<p>Fecha de publicación: {{ article.publication_date }}</p>
+<a href="{% url 'article_update' article.pk %}">Editar</a>
+<a href="{% url 'article_delete' article.pk %}">Eliminar</a>
